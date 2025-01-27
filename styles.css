@@ -1,0 +1,256 @@
+:root {
+    --primary-green: #1a8f3c;
+    --secondary-green: #25c350;
+    --accent-color: #f9a825;
+    --background-color: #f0f4f0;
+    --text-color: #333;
+    --section-border: 2px solid var(--primary-green);
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--primary-green);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    max-width: 150px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--accent-color);
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    background-color: #e5efe6;
+    border: var(--section-border);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: var(--primary-green);
+    border-bottom: 2px solid var(--secondary-green);
+    padding-bottom: 10px;
+}
+
+.featured-matches {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.match-card {
+    background-color: #e5efe6;
+    border: 1px solid var(--secondary-green);
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px;
+    text-align: center;
+    width: 250px;
+}
+
+.vs {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: var(--accent-color);
+    margin: 10px 0;
+}
+
+.news-carousel {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-bottom: 20px;
+}
+
+.news-item {
+    display: inline-block;
+    width: 300px;
+    margin-right: 20px;
+    vertical-align: top;
+    white-space: normal;
+}
+
+.news-item img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.player-spotlight {
+    text-align: center;
+}
+
+.player-info img {
+    width: 200px;
+    border-radius: 50%;
+    border: 4px solid var(--secondary-green);
+}
+
+.league-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.league-table th, .league-table td {
+    border: 1px solid #dddddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.league-table th {
+    background-color: var(--secondary-green);
+    color: white;
+}
+
+.league-table tr:nth-child(even) {
+    background-color: #d0e9d2;
+}
+
+.social-feed {
+    background-color: #e5efe6;
+}
+
+
+
+footer {
+    background-color: var(--primary-green);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .match-card {
+        width: 100%;
+    }
+
+    .news-carousel {
+        overflow-x: scroll;
+    }
+
+    .newsletter-signup form {
+        flex-direction: column;
+    }
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #1a361e;
+    color: #fff;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 2rem;
+}
+
+footer {
+    background-color: #1a361e;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.logo-container {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.logo {
+    max-width: 200px;
+    height: auto;
+}.slideshow-container {
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  .mySlides {
+    display: none;
+  }
+  
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
